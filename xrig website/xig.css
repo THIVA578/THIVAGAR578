@@ -1,0 +1,165 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: 50px;
+  z-index: 5;
+  width: 100vw;
+ 
+}
+ header .hamburger
+{
+  margin: 0;
+  padding: 0;
+  width: 30% ; 
+  height: 100%;
+ display: flex;
+ flex-direction: column;
+ place-content: center;
+ align-items: center;
+  
+}
+.header-title
+{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.type
+{
+  width: 27px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0.2px;
+  transition: margin-bottom 150ms linear, margin-top 150ms linear;
+}
+.hamburger:hover .type
+{
+  margin: 6px 0;
+}
+
+.main-img
+{
+  height: 100%;
+  width: 100vw;
+  object-fit:cover;
+  object-position: center;
+  margin: 0;
+  z-index: 3;
+}
+.pc-container
+{
+  height: 100vh;
+  width: 100vw;
+  background-color:#111111;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  margin-top: -5px;
+}
+.first-pc-image
+{
+  object-fit: cover;
+  max-height: 570px;
+  width: 100%;
+}
+.bar-style
+{
+  width: 4.9rem;
+  height: 0.3rem;
+border: 0;
+border-top: 7.5px solid white;
+
+}
+
+.first-pc-content-left
+{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0;
+border-top: 0.2px solid rgb(32, 32, 32);
+}
+.dummy
+{
+  height: 90%;
+  width: 90%;
+   display: flex;
+   align-items: center;
+   padding-left: 70px;
+   
+}
+.double-dummy
+{
+  height: 50%;
+  width: 90%;
+  
+}
+.x1
+{
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+  font-family:Montserrat,sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+.info-container
+{
+  width: 100%;
+}
+.pc-info
+{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family:Montserrat,sans-serif;
+  color: #a9a9a9;
+  margin-bottom: 2rem;
+}
+.pc-description
+{
+  font-size: 1rem;
+  font-weight: 400;
+  font-family:Montserrat,sans-serif;
+  color: #a9a9a9;
+  margin-bottom: 3rem;
+  
+}
+.click-button
+{
+  width: 174px;
+  height: 46px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  transition: outline 150ms;
+}
+.click-button:hover
+{
+  outline: 3px solid white;
+}
+
+@media (max-width:750px)
+{
+  .pc-container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}

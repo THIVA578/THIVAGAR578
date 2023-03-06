@@ -1,0 +1,278 @@
+*
+{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: Cambria;
+  color: #1B2522;
+  
+}
+.header-full-container
+{
+  height: 100vh;
+  background-image: url("img/header_image.jpg");
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wds-logo
+{
+  width: 50px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B2522;
+  padding: .5rem 1rem;
+}
+.nav-bar-top
+{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-list
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.header-list li
+{
+  margin-left: 1rem;
+  color: white;
+}
+li,button{
+  transition: 500ms;
+}
+.header-list li:hover
+{
+  color: #CCC;
+  cursor: pointer;
+}
+.header-main-heading
+{
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+.header-sub-heading
+{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.btn
+{
+  color: white;
+  background-color: hsl(200, 100%, 50%);
+  border: none;
+  border-radius: 10000px;
+  padding: 0.25em 1em;
+  font-size: inherit;
+}
+.btn:hover
+{
+  color: #CCC;
+  cursor: pointer;
+}
+.scroll-img
+{
+  width: 30px;
+  position: absolute;
+  bottom: 1rem;
+}
+.section
+{
+    padding: 2rem;
+}
+.curriculum-heading
+{
+  font-size: 2rem;
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.curriculum-grid
+{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(auto,450px));
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+.curriculum-grid img{
+  width: 50px;
+  margin-right: 1rem;
+}
+.main-content
+{
+  display: flex;
+  align-items: center;
+}
+.main-content:hover img,img:hover
+{
+  animation: 200ms shake;
+
+}
+.section-accent
+{
+  background-color:#0AF;
+  display: flex;
+  justify-content: center;
+
+}
+.basic-box
+{
+  border: 1px solid black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #DCF4FF;
+  border-radius: 0.5rem;
+  width: 300px;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 300ms ease-in-out;
+  
+}
+.basic-box:hover
+{
+  transform: scale(1.02);
+  transform-origin: right;
+}
+.basic-power
+{
+  border-top-right-radius: 0;
+  border-right: none;
+  border-bottom-right-radius: 0;
+}
+.basic-box h3
+{
+  text-align: center;
+  margin: 0;
+  line-height: 2.3rem;
+  font-size: 1.8rem;
+}
+.basic-34,.basic-5
+{
+  text-decoration: line-through;
+  color: rgb(124, 121, 121);
+}
+.preferred-5
+{
+  text-decoration: line-through;
+  color: rgb(124, 121, 121);
+}
+.preferred-box
+{
+  margin: 1rem 0;
+  background-color: white;
+}
+.pro-box
+{
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+   transform-origin: left;
+}
+
+@keyframes shake
+{
+  25%
+  {
+    transform: rotate(5deg);
+  }
+  75%
+  {
+    transform: rotate(-5deg);
+  }
+}
+@media (max-width:900px)
+{
+  .section-accent
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .basic-power,.pro-box
+  {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    transform-origin: center;
+  }
+  .curriculum-grid
+  {
+    display: grid;
+    grid-template-columns: minmax(auto,450px);
+  }
+}
+
+.accent-heading
+{
+  font-size: 2.5rem;
+  margin: 0;
+}
+.accent-content
+{
+  width:300px;
+}
+.information-heading
+{
+  font-size: 2rem;
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.form{
+  max-width: 900px;
+  margin: 0 auto;
+ 
+}
+.form label{
+font-weight: bold;
+color: #1B2522;
+}
+.form input,textarea
+{
+  width: 100%;
+  margin-top: .25rem;
+  margin-bottom: .75rem;
+  border: 1px solid #1B2522;
+  padding: .5em;
+  color: inherit;
+  font-family: inherit;
+  outline: none;
+  border-radius: .3em;
+}
+.form textarea
+{
+  resize: vertical;
+  min-height: 75px;
+  max-height: 250px;
+}
+.btn-container
+{
+  text-align: end;
+  margin-bottom: 20px;
+}
+.submit-btn
+{
+  border-radius: .3em;
+}

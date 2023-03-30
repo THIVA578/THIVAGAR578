@@ -1,0 +1,164 @@
+body {
+  font-family: Delicious Handrawn, sans-serif;
+  background-color: rgb(37, 37, 43);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 600px 215px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.container {
+  background-color: rgb(109, 26, 26);
+  padding: 10px 24px;
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: bisque;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-family: Delicious Handrawn, sans-serif;
+  animation: makecolor 0.8s linear 1s forwards alternate infinite;
+}
+.container .box {
+  width: 100%;
+  display: flex;
+}
+.box div {
+  width: 100%;
+}
+
+select {
+  width: 90%;
+  height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: rgb(194, 194, 140);
+  outline: none;
+  color: black;
+  margin: 0.2em 0;
+  padding: 0 1em;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s ease-in 0.001s;
+}
+select:hover {
+  background-color: wheat;
+}
+
+input {
+  width: 40%;
+  height: 40px;
+  font-size: 1em;
+  margin: 0.2em 0;
+  border-radius: 10px;
+  border: none;
+  background: rgb(102, 100, 100);
+  outline: none;
+  padding: 0 1em;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 40px;
+  background-color: rgb(46, 87, 46);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  font-family: Delicious Handrawn, sans-serif;
+  transition: all 0.5s ease-in 0.001s;
+}
+#btn:hover {
+  transform: scale(1.2);
+  background-color: rgb(127, 168, 117);
+}
+
+#input::placeholder,
+#result::placeholder {
+  color: white;
+  font-family: Delicious Handrawn, sans-serif;
+}
+
+.error,
+.error2 {
+  display: none;
+  color: yellow;
+  font-size: 1.7rem;
+  margin: 0.2rem;
+  padding: 0;
+}
+.error.show {
+  display: block;
+}
+.error2.show {
+  display: block;
+}
+
+.currency {
+  font-family: Delicious Handrawn, sans-serif;
+}
+.currency-list-box {
+  background-color: bisque;
+}
+.listof-currency:hover {
+  background-color: brown;
+}
+
+.currency-list {
+  font-size: 1.3rem;
+  color: rgb(145, 145, 46);
+  font-weight: bold;
+}
+
+.listof-currency {
+  font-size: initial;
+  color: initial;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: rotate(-10deg);
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes makecolor {
+  0% {
+    background: rgb(138, 138, 207);
+    background: linear-gradient(
+      90deg,
+      rgba(138, 138, 207, 1) 22%,
+      rgba(210, 27, 67, 1) 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+  }
+}
